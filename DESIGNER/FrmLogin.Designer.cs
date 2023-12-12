@@ -39,6 +39,7 @@ namespace DESIGNER
             this.btnIngresar = new System.Windows.Forms.Button();
             this.btnfinalizar = new System.Windows.Forms.Button();
             this.ErrorLogin = new System.Windows.Forms.ErrorProvider(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorLogin)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,11 +121,21 @@ namespace DESIGNER
             // 
             this.ErrorLogin.ContainerControl = this;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(74, 345);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(196, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "cerrar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnfinalizar);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.txtclave);
@@ -156,5 +167,6 @@ namespace DESIGNER
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.Button btnfinalizar;
         private System.Windows.Forms.ErrorProvider ErrorLogin;
+        public System.Windows.Forms.Button button1;
     }
 }
